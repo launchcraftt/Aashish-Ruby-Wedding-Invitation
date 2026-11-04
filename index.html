@@ -349,7 +349,7 @@ footer{background:#2a0913;color:#cdbfae;font-weight:400}footer b{color:#d8b873}
             <div class="ed">Thursday · 3 December 2026</div>
             <div class="et">9:00 AM</div>
             <p class="tag">Morning</p>
-            <p class="vn">Senegalia Resort</p>
+            <p class="vn">Senegalia Resort, Rishikesh Uttrakhand</p>
             <div class="acts"><a class="mp" target="_blank" rel="noopener" href="MAPV">Open in Maps ↗</a><button class="mp cal">＋ Calendar</button></div>
           </div>
         </article>
@@ -360,7 +360,7 @@ footer{background:#2a0913;color:#cdbfae;font-weight:400}footer b{color:#d8b873}
             <div class="ed">Thursday · 3 December 2026</div>
             <div class="et">6:00 PM</div>
             <p class="tag">Evening</p>
-            <p class="vn">Senegalia Resort</p>
+            <p class="vn">Senegalia Resort, Rishikesh Uttrakhand</p>
             <div class="acts"><a class="mp" target="_blank" rel="noopener" href="MAPV">Open in Maps ↗</a><button class="mp cal">＋ Calendar</button></div>
           </div>
         </article>
@@ -374,7 +374,7 @@ footer{background:#2a0913;color:#cdbfae;font-weight:400}footer b{color:#d8b873}
             <div class="ed">Friday · 4 December 2026</div>
             <div class="et">12:00 PM</div>
             <p class="tag">Afternoon · Pheras &amp; blessings</p>
-            <p class="vn">Senegalia Resort</p>
+            <p class="vn">Senegalia Resort, Rishikesh Uttrakhand</p>
             <div class="acts"><a class="mp" target="_blank" rel="noopener" href="MAPV">Open in Maps ↗</a><button class="mp cal">＋ Calendar</button></div>
           </div>
         </article>
@@ -394,7 +394,7 @@ footer{background:#2a0913;color:#cdbfae;font-weight:400}footer b{color:#d8b873}
         <article class="vc rv z">
           <div class="vi">❂</div>
           <div class="cap k">Events venue</div>
-          <h3>Senegalia Resort</h3>
+          <h3>Senegalia Resort, Rishikesh Uttrakhand</h3>
           <p class="ad">Haldi · Mehndi · Shadi</p>
           <a class="mp" target="_blank" rel="noopener" href="MAPV">Get directions ↗</a>
         </article>
@@ -518,7 +518,7 @@ function cd(){let s=Math.max(0,Math.floor((T-new Date())/1000));const v={d:s/864
 
 /* add to calendar (.ics, IST) */
 $$('.cal').forEach(b=>b.onclick=()=>{const a=b.closest('.ec').dataset.ev.split('|'),st=a[1].replace(/[-:]/g,'')+'00',h=+a[1].slice(11,13)+3,en=a[1].slice(0,10).replace(/-/g,'')+'T'+String(h).padStart(2,'0')+a[1].slice(14,16)+'00';
-  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Debakanti Aashish Wedding//EN','BEGIN:VEVENT','UID:'+st+'@debakanti-aashish','DTSTAMP:20261021T000000Z','DTSTART;TZID=Asia/Kolkata:'+st,'DTEND;TZID=Asia/Kolkata:'+en,'SUMMARY:'+a[0]+' - Debakanti & Aashish','LOCATION:Senegalia Resort','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Debakanti Aashish Wedding//EN','BEGIN:VEVENT','UID:'+st+'@debakanti-aashish','DTSTAMP:20261021T000000Z','DTSTART;TZID=Asia/Kolkata:'+st,'DTEND;TZID=Asia/Kolkata:'+en,'SUMMARY:'+a[0]+' - Debakanti & Aashish','LOCATION:Senegalia Resort, Rishikesh Uttrakhand','END:VEVENT','END:VCALENDAR'].join('\r\n');
   const l=document.createElement('a');l.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));l.download=a[0].replace(/ /g,'-')+'.ics';document.body.appendChild(l);l.click();l.remove()});
 </script>
 </body>
